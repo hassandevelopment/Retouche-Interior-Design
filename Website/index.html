@@ -150,9 +150,14 @@
       padding: 1.5rem 2rem 2rem;
       z-index: 99;
       transform: translateY(-110%);
-      transition: transform 0.35s var(--ease);
+      visibility: hidden;
+      transition: transform 0.35s var(--ease), visibility 0s linear 0.35s;
     }
-    .nav-mobile.open { transform: translateY(0); }
+    .nav-mobile.open {
+      transform: translateY(0);
+      visibility: visible;
+      transition: transform 0.35s var(--ease), visibility 0s linear 0s;
+    }
     .nav-mobile ul { list-style: none; display: flex; flex-direction: column; gap: 1.25rem; }
     .nav-mobile a {
       font-size: 0.9rem;
