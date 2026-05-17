@@ -88,19 +88,15 @@
       justify-content: space-between;
     }
     .nav-logo {
-      font-family: var(--font-serif);
-      font-size: 1.1rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      color: #fff;
-      transition: color 0.3s;
+      display: flex;
+      align-items: center;
     }
-    .nav-logo span {
-      color: rgba(255,255,255,0.7);
-      transition: color 0.3s;
+    .nav-logo-img {
+      height: 38px;
+      width: auto;
+      display: block;
+      border-radius: 3px;
     }
-    .nav.scrolled .nav-logo { color: var(--text); }
-    .nav.scrolled .nav-logo span { color: var(--accent); }
 
     .nav-links {
       display: flex;
@@ -179,7 +175,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 40%;
+      object-position: center 20%;
     }
     .hero-gradient {
       position: absolute;
@@ -656,7 +652,9 @@
   <!-- Navigation -->
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="#" class="nav-logo" aria-label="Retouche Interior Design home">Retouche<span>.</span></a>
+      <a href="#" class="nav-logo" aria-label="Retouche Interior Design home">
+        <img src="brand_assets/retouche-logo.png" alt="Retouche Interior Design & Decor" class="nav-logo-img">
+      </a>
       <ul class="nav-links">
         <li><a href="#about">Studio</a></li>
         <li><a href="#work">Work</a></li>
@@ -681,8 +679,8 @@
   <section class="hero" aria-label="Hero">
     <img
       class="hero-img"
-      src="brand_assets/IMG_4013.jpg"
-      alt="Landscaped garden at dusk — modern pergola, vertical green wall, outdoor seating area, palm trees, and lit stepping stones"
+      src="brand_assets/IMG_4026.jpg"
+      alt="Modern residential villa exterior — clean white facade, warm wood cladding accents, palm trees, and landscaped driveway"
       fetchpriority="high"
     >
     <div class="hero-gradient" aria-hidden="true"></div>
